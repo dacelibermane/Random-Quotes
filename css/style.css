@@ -1,0 +1,165 @@
+/*Removing basic stylings
+box-sizing:border-box --> when adding padding/margins/borders makes sure that those are included in  overall height/width that has been set.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(rgba(11, 11, 39, 0.7), transparent), url("../img/drops.jpg");
+    background-size: cover;
+    background-position:center;
+  }
+
+
+  h1,
+  p,
+  span,
+  button{
+    color: rgb(236, 241, 233);
+    font-family: 'Roboto Slab', serif;
+    text-shadow: -0.5px 0.5px 0 #000,
+				  0.5px 0.5px 0 #000,
+				 0.5px -0.5px 0 #000;
+  }
+
+
+.container{
+  background: rgba(66, 66, 93, 0.9);
+  max-width: 800px;
+  height: 500px;
+  padding: 25px;
+  margin: auto;
+  font-size: 16px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-size: 45px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+    
+/* .quote-box{
+  margin-bottom: 25px;
+} */
+
+.quote{
+  align-items: center;
+  justify-content: center;
+  padding: 5px 25px;
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.quote::before{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f10d";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 35px;
+  margin-right: 10px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.quote::after{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f10e";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 35px;
+  margin-left: 10px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.quote-info{
+  text-align: right;
+}
+
+.author{
+  
+  margin-right: 15px;
+}
+
+.author::before{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f5ad";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 15px;
+  margin-right: 3px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.citation{
+  font-style: italic;
+  margin-right: 15px;
+}
+
+.citation::before{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f02d";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 15px;
+  margin-right: 3px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.year{
+  margin-right: 15px;
+}
+
+.year::before{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f073";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 15px;
+  margin-right: 3px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.load-quote{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  font-weight: 600;
+  padding: 12px 36px;
+  margin: 35px 0;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.load-quote:hover{
+background-color: rgb(167, 177, 211);
+color: black;
+text-shadow:none;
+}
